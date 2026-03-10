@@ -1,45 +1,295 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kateryna Sitailo – UX/UI Designer</title>
   <style>
-    body{
-      font-family: Arial;
-      margin:40px;
-      max-width:800px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    h1{
-      color:#222;
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7fb;
+      color: #1f1f1f;
+      line-height: 1.6;
     }
-    a{
-      color:#4F46E5;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .hero {
+      background: white;
+      padding: 60px 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #4f46e5;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 18px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: #4f46e5;
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: #4338ca;
+    }
+
+    .button-secondary {
+      background: #eef2ff;
+      color: #3730a3;
+    }
+
+    .button-secondary:hover {
+      background: #e0e7ff;
+    }
+
+    .section {
+      background: white;
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+    }
+
+    .section h3 {
+      font-size: 26px;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    .section p {
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      background: #f3f4f6;
+      color: #111827;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 15px;
+    }
+
+    .project-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    .project-card h4 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      color: #4b5563;
+      margin-bottom: 14px;
+    }
+
+    .project-card a {
+      color: #4f46e5;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-links a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 24px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 28px 22px;
+      }
     }
   </style>
 </head>
-
 <body>
+  <div class="container">
 
-<h1>Kateryna Sitailo</h1>
-<p>UX/UI Designer based in London.</p>
+    <section class="hero">
+      <h1>Kateryna Sitailo</h1>
+      <h2>UX/UI Designer based in London</h2>
+      <p>
+        I design intuitive, user-centred digital experiences for web and mobile products.
+        My background in B2B customer service leadership helps me understand user behaviour,
+        stakeholder needs, and real customer pain points.
+      </p>
 
-<h2>Portfolio</h2>
+      <div class="buttons">
+        <a class="button button-primary" href="https://www.behance.net/katerynasitailo" target="_blank">View Behance</a>
+        <a class="button button-secondary" href="https://drive.google.com/drive/folders/1gW379zvs0-PQig5ZX2QusxHSzHjq8wKf?usp=sharing" target="_blank">Full Portfolio PDF</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/katerynasitailo" target="_blank">LinkedIn</a>
+      </div>
+    </section>
 
-<p>
-<a href="https://www.behance.net/katerynasitailo">
-View my projects on Behance
-</a>
-</p>
+    <section class="section">
+      <h3>About Me</h3>
+      <p>
+        I am a UX/UI Designer with experience in user research, wireframing, prototyping,
+        and responsive interface design. I enjoy translating complex ideas into clear,
+        visually engaging digital experiences.
+      </p>
+      <p>
+        My portfolio includes B2C e-commerce, mobile app concepts, and visual design work.
+        I am particularly interested in product, web, and digital design roles where I can
+        combine UX thinking with strong visual execution.
+      </p>
+    </section>
 
-<p>
-<a href="https://drive.google.com/drive/folders/1gW379zvs0-PQig5ZX2QusxHSzHjq8wKf">
-Full Portfolio (Google Drive)
-</a>
-</p>
+    <section class="section">
+      <h3>Core Skills</h3>
+      <div class="skills">
+        <span class="skill">UX Design</span>
+        <span class="skill">UI Design</span>
+        <span class="skill">User Research</span>
+        <span class="skill">Wireframing</span>
+        <span class="skill">Prototyping</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">Design Systems</span>
+        <span class="skill">Figma</span>
+        <span class="skill">Adobe Illustrator</span>
+        <span class="skill">Photoshop</span>
+        <span class="skill">Miro</span>
+      </div>
+    </section>
 
-<h2>About</h2>
-<p>
-I design intuitive digital experiences focusing on user-centred design, usability and clean visual interfaces.
-</p>
+    <section class="section">
+      <h3>Selected Projects</h3>
+      <div class="projects">
+        <div class="project-card">
+          <h4>OLHADOO</h4>
+          <p>
+            B2C e-commerce website concept focused on product discovery, user journeys,
+            responsive layouts, and a smoother shopping experience.
+          </p>
+          <a href="https://www.behance.net/gallery/229833615/OLHADOO-Fashion-Brand-Website-Responsive" target="_blank">View project</a>
+        </div>
 
+        <div class="project-card">
+          <h4>FitCommunity</h4>
+          <p>
+            UX/UI mobile app concept for finding workout partners and building a community-driven
+            fitness experience.
+          </p>
+          <a href="https://www.behance.net/gallery/216171867/FitCommunity" target="_blank">View project</a>
+        </div>
+
+        <div class="project-card">
+          <h4>Pet-Friendly Locator</h4>
+          <p>
+            Mobile-first app concept designed to help users discover pet-friendly places through
+            clear navigation and user-centred flows.
+          </p>
+          <a href="https://www.behance.net/gallery/210962957/Pet-Friendly-Locator" target="_blank">View project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Contact</h3>
+      <p class="contact-links">
+        Email: <a href="mailto:doroshchukekaterina@gmail.com">doroshchukekaterina@gmail.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/katerynasitailo" target="_blank">linkedin.com/in/katerynasitailo</a><br>
+        Behance: <a href="https://www.behance.net/katerynasitailo" target="_blank">behance.net/katerynasitailo</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Kateryna Sitailo — UX/UI Designer
+    </footer>
+
+  </div>
 </body>
 </html>
